@@ -15,10 +15,39 @@ body {
     line-height: 1.6;
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
 .showcase {
     background-color: $primary-color;
     color: #fff;
     height: 600px;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                padding: 15px;
+            }
+
+            a:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+    a {
+        color: white;
+    }
 }
 
 .container {
@@ -26,8 +55,4 @@ body {
     padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
-}
-
-img {
-    width: 100%;
 }
