@@ -12,7 +12,7 @@ $secondary-color: #ff8700;
 body {
     background-color: $light-color;
     font-family: $font-stack;
-    line-height: 1.6;
+    line-height: 1.8em;
 }
 
 img {
@@ -47,6 +47,26 @@ a {
     }
     a {
         color: white;
+    }
+
+    &-content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 3em;
+            line-height: 1.2em;
+        }
+
+        p {
+            margin: 1.2em 0;
+        }
     }
 }
 
