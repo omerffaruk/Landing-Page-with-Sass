@@ -1,3 +1,23 @@
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5em 1.2em;
+  margin: 0.2em;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #418bff;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
