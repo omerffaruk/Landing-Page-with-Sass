@@ -19,11 +19,11 @@ img {
 
 a {
     text-decoration: none;
+    color: set-text-color($primary-color);
 }
 
 .showcase {
-    background-color: $primary-color;
-    color: #fff;
+    @include set-background-colour($primary-color);
     height: 600px;
     nav {
         display: flex;
@@ -42,9 +42,6 @@ a {
                 color: $secondary-color;
             }
         }
-    }
-    a {
-        color: white;
     }
 
     &-content {

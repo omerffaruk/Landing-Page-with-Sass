@@ -11,11 +11,13 @@
 }
 
 .btn-primary {
-  background-color: #418bff;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 .btn-secondary {
   background-color: #ff8700;
+  color: #fff;
 }
 
 * {
@@ -37,10 +39,11 @@ img {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .showcase {
-  background-color: #0e6cff;
+  background-color: #000;
   color: #fff;
   height: 600px;
 }
@@ -70,10 +73,6 @@ a {
 
 .showcase nav ul a:hover {
   color: #ff8700;
-}
-
-.showcase a {
-  color: white;
 }
 
 .showcase-content {
