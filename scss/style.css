@@ -78,28 +78,6 @@
   padding: 5rem 0;
 }
 
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 0.5em 1.2em;
-  margin: 0.2em;
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.btn-primary {
-  background-color: #404040;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #ff8700;
-  color: #fff;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,6 +98,13 @@ img {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 .showcase {
@@ -166,6 +151,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2rem;
 }
 
 .showcase-content img {
@@ -177,9 +163,36 @@ a {
   line-height: 1.2em;
 }
 
-.container {
-  max-width: 1100px;
-  padding: 0 30px;
-  margin: 0 auto;
-  overflow: auto;
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5em 1.2em;
+  margin: 0.2em;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #404040;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 450px;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content img {
+    display: none;
+  }
 }

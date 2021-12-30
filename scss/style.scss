@@ -1,5 +1,4 @@
 @import 'config';
-@import 'buttons';
 
 * {
     box-sizing: border-box;
@@ -20,6 +19,13 @@ img {
 a {
     text-decoration: none;
     color: set-text-color($primary-color);
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
 }
 
 .showcase {
@@ -49,6 +55,7 @@ a {
         height: 100%;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
 
         img {
             width: 50%;
@@ -61,9 +68,7 @@ a {
     }
 }
 
-.container {
-    max-width: 1100px;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: auto;
-}
+
+
+@import 'buttons';
+@import 'mobile';
