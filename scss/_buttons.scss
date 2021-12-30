@@ -12,7 +12,7 @@
 
 .btn-primary {
     @extend %btn;
-    @include set-background-colour(lighten($primary-color, 10%))
+    @include set-background-colour(lighten($primary-color, 25%))
 }
 
 .btn-secondary {

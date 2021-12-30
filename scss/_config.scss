@@ -19,3 +19,21 @@ $secondary-color: #ff8700;
     background-color: $color;
     color: set-text-color($color);
 }
+
+// setting margin and padding with @each loop
+$spaceamounts: (1, 2, 3, 4, 5);     // variable for space
+
+@each $space in $spaceamounts {     // this will create classes like bootstrap classes
+    .m-#{$space} {        // for example, .m-1 class will add 1rem margin to the element with this class
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
